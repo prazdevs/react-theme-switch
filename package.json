@@ -1,5 +1,6 @@
 {
   "name": "react-theme-switch",
+  "author": "Sacha 'PraZ' Bouillez",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +9,10 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-switch": "^5.0.1",
+    "styled-components": "^5.1.0",
+    "styled-icons": "^10.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
