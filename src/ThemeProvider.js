@@ -1,8 +1,9 @@
-import React, { createContext, useState } from 'react';
-import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import React, { createContext } from "react";
+import { ThemeProvider as StyledThemeProvider } from "styled-components";
 
-import darkTheme from './themes/dark';
-import lightTheme from './themes/light';
+import darkTheme from "./themes/dark";
+import lightTheme from "./themes/light";
+import { useLocalStorage } from "./useLocalStorage";
 
 export const ThemeContext = createContext({
   isDarkTheme: true,
@@ -10,7 +11,7 @@ export const ThemeContext = createContext({
 });
 
 const ThemeProvider = ({ children }) => {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useLocalStorage("isDarkTheme", true);
 
   const toggleTheme = () => {
     setDark(!dark);
