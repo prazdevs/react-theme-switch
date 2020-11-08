@@ -1,9 +1,9 @@
-import { Moon, Sun } from '@styled-icons/evaicons-solid';
-import React, { useContext } from 'react';
-import Switch from 'react-switch';
-import styled from 'styled-components';
+import { Moon, Sun } from "@styled-icons/evaicons-solid";
+import React, { useContext } from "react";
+import Switch from "react-switch";
+import styled from "styled-components";
 
-import { ThemeContext } from './ThemeProvider';
+import { ThemeContext } from "./ThemeProvider";
 
 const Icon = styled.div`
   height: 100%;
@@ -23,9 +23,11 @@ const MoonIcon = styled(Moon)`
 
 const ThemeToggler = () => {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+  const toggleLabel = `Switch to ${isDarkTheme ? "light" : "dark"} theme`;
 
   return (
     <Switch
+      aria-label={toggleLabel}
       onChange={toggleTheme}
       checked={isDarkTheme}
       handleDiameter={20}
