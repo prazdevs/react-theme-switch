@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^12.2.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "4.0.0",
+    "react-scripts": "4.0.1",
     "react-switch": "^5.0.1",
     "styled-components": "^5.2.1",
     "styled-icons": "^10.22.0"
